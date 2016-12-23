@@ -1,0 +1,250 @@
+body{
+	overflow: hidden !important;
+}
+
+#sunMoon {
+    width: 100px;
+    height: 100px;
+    
+    position: absolute;
+    -webkit-animation-name: sunPosition; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: sunPosition;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes sunPosition {
+    0% { left:10%; top:110%;}
+  30%    {left:60%; top:3%;}
+  60%   {left:65%; top:110%;}
+ 60.01%   {left:-65%; top:110%;}
+ 60.02%   {left:-0%; top:-10%;}
+60.3%   {left:0%; top:-10%;}
+60.4%   {left:3%; top:-10%;}
+100%   {left:3%; top:100%;}
+    }
+
+/* Standard syntax */
+@keyframes sunPosition {
+          0% { left:10%; top:110%;}
+  30%    {left:60%; top:3%;}
+  60%   {left:65%; top:110%;}
+ 60.01%   {left:-65%; top:110%;}
+ 60.02%   {left:-0%; top:-10%;}
+60.3%   {left:0%; top:-10%;}
+60.4%   {left:3%; top:-10%;}
+100%   {left:3%; top:100%;}
+
+    
+}
+
+#field{
+/*border:2px solid blue; */
+height:100%;
+width:100%;
+position:absolute;
+right:0px;
+}
+
+#fieldArea{
+/*border:2px solid red; */
+min-height:200px;
+height: auto;
+width:100%;
+position:absolute;
+bottom:0px;
+}
+
+
+
+
+
+
+.container {
+/*border:10px solid blue;*/
+position:absolute;
+height:100%;
+width:100%;
+right:0px;
+left:0px;
+padding:0px;
+margin:0px;
+width:1300px;
+background-color:black;
+     -webkit-animation-name: background; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: background;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes background {
+
+0%   {background-color:#5C8AE6;}  /*at the moment of sunrise */
+
+35%   {background-color:white;}
+41%   {background-color:#FFE680;}
+60%   {background-color:black;}
+100%   {background-color:#B2C2E0;}
+}
+
+/* Standard syntax */
+@keyframes background {
+0%   {background-color:#5C8AE6;}  /*at the moment of sunrise */
+
+25%   {background-color:white;}
+47%   {background-color:#FFE680;}
+65%   {background-color:black;}
+100%   {background-color:#B2C2E0;}
+/* at moon set */
+}
+
+.container{
+height:100%;
+width:100%;
+position:absolute:
+right:0px;
+padding:0px;
+margin:0px;
+}
+
+#cloud1{
+
+height:100%;
+width:100%;
+}
+
+
+
+#cloudArea {
+    width:45%;
+    height: 50%;
+  /*  border:2px solid red; */
+    position: absolute;
+    -webkit-animation-name: cloudArea; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: cloudArea;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes cloudArea {
+      0%   {left:0; top:0px;}
+
+    100%   {left:1800px; top:0;}
+    }
+
+/* Standard syntax */
+@keyframes cloudArea {
+
+      
+    0% { left:-200px; top:20px;}
+50%   {left:300px; top:-150px;}
+ 
+100%   {left:500px; top:-300px;}
+    
+}
+
+#star{
+height:100%;
+width:100%;
+
+}
+#starsArea {
+    width:90%;
+    height: 40%;
+    /*border:2px solid red; */ 
+    position: absolute;
+    -webkit-animation-name: starArea; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: starArea;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes starArea {
+      0%   {left:0; top:-500px;}
+     50%   {left:1800px; top:0;}
+    100%   {left:1800px; top:0;}
+    }
+
+/* Standard syntax */
+@keyframes starArea {
+
+      
+ 0%   {left:-0px; top:-1000px;}
+  72%   {left:10px; top:-60px;}
+ 72.1%   {left:30px; top:-1000px;}
+100%   {left:0px; top:-1000px;}
+    
+}
+#bird1{
+width:7%;
+    height: 10%;
+}
+
+
+
+#bird2 {
+    width:#%;
+    height: 5%;
+   /* border:2px solid blue; */
+    position: absolute;
+    -webkit-animation-name: birbird2dArea; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: bird2;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bird2 {
+      0%   {left:-100px; top:30px;}
+     40%   {left:1900px; top:-50px;}
+    100%   {left:1800px; top:0;}
+    }
+
+/* Standard syntax */
+@keyframes bird2 {
+
+      
+ 0%   {left:-30px; top:30px;}
+40%   {left:1100px; top:-50px;}
+100%   {left:1200px; top:-100px;}
+    
+}
+
+#bird3 {
+    width:2%;
+    height: 3%;
+    /* border:2px solid red; */
+    position: absolute;
+    -webkit-animation-name: bird3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 60s; /* Chrome, Safari, Opera */
+    animation-name: bird3;
+    animation-duration: 60s;
+animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bird3 {
+      0%   {left:-500px; top:100px;}
+     50%   {left:1800px; top:0;}
+    100%   {left:1800px; top:0;}
+    }
+
+/* Standard syntax */
+@keyframes bird3 {
+
+      
+   0%   {left:-500px; top:300px;}
+45%   {left:1100px; top:-70px;}
+100%   {left:1200px; top:-100px;}
+    
+}
+
